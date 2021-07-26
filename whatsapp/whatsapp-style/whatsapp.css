@@ -1,0 +1,892 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;1,400&family=Oxygen:wght@300;400&family=Poppins:wght@300;400&family=Raleway:wght@300;400&family=Roboto:wght@300;400&family=STIX+Two+Math&display=swap');
+
+*::before,
+*::after,
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #EEEEEE;
+}
+
+:root{
+    --red : red;
+    --green : green;
+    --orange : orange;
+    --blue : blue;
+    --yellow : yellow;
+    --lime : lime;
+    --purple : #9C27B0;
+    --skyblue : skyblue;
+    --black : black;
+    --white : white;
+    --fontSize : 1.50rem;
+
+    /* flex box  */
+    --flex : flex;
+    --grid : grid;
+    --center : center;
+    --between : space-between;
+    --row : row;
+    --wrap : wrap;
+
+    /* google fonts  */
+    --ibmFonts : 'IBM Plex Sans', sans-serif;
+    --oxygenFonts : 'Oxygen', sans-serif;
+    --PoppinsFonts : 'Poppins', sans-serif;
+    --ralewayFonts : 'Raleway', sans-serif;
+    --robotoFonts : 'Roboto', sans-serif;
+    --stixFonts : 'STIX Two Math', serif;
+
+    --boxShadow : 5px 8px 8px -6px rgba(0,0,0,0.5);
+}
+
+button,i{
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* ******************************** aside section ****************************************** */
+.whatsapp{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.whatsapp .whatsapp_background{
+    width: 430px;
+    margin: 50px auto 0 auto;
+    height: 650px;
+    background-color: var(--white);
+    border-radius: 15px;
+    box-shadow: 3px 4px 33px -6px rgba(0,0,0,0.5);
+    position: relative;
+    z-index: 1;
+}
+
+.whatsapp_background::before{
+    position: absolute;
+    top: 4.50px;
+    left: 0;
+    right: 0;
+    content: "";
+    width: 98%;
+    margin: 0 auto;
+    height: 98.50%;
+    border: 1px solid rgb(222 219 219 / 47%);
+    border-radius: 15px;
+    z-index: -1;
+}
+
+.whatsapp_curicle{
+    position: relative;
+    top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.whatsapp_curicle .curicle_one{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: silver
+}
+
+.whatsapp_curicle .curicle_large{
+    width: 50px;
+    height: 8px;
+    border-radius: 5px;
+    background-color: silver;
+    margin-left: 10px;
+    box-shadow: inset 5px 8px 8px -6px rgba(0, 0, 0, 0.171);
+}
+
+.background_screen{
+    width: 90%;
+    margin: 50px auto 0 auto;
+    height: 80%;
+    background-image: url("../whatsapp-image/whatsapp_background_img.png");
+    /* background-size: contain; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.watch_dsiplay{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 0px 10px;
+    background-color: #075E54;
+    color: var(--white);
+}
+
+.watch_dsiplay .watch_container{
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+.watch_container span{
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.network{
+    width: 90%;
+    display: flex;
+}
+
+.network div{
+    position: relative;
+    top: 0;
+    left: -20px;
+    width: 4px;
+    height: 13px;
+    background-color: var(--white);
+    margin: 0 1px;
+}
+
+.network .network_one{
+    position: relative;
+    top: 6px;
+    height: 7px;
+    animation: signleTowerTow 1s ease-in-out infinite;
+}
+
+@keyframes signleTowerTow{
+    0%{height: 0px; top: 12px;}
+    100%{height: 7px;}
+}
+
+.network .network_two{
+    position: relative;
+    top: 3px;
+    height: 10px;
+    animation: signleTowerOne 1s ease-in-out infinite;
+}
+
+@keyframes signleTowerOne{
+    0%{height: 0px; top: 12px;}
+    100%{height: 10px;}
+}
+
+.buttery img {
+    position: absolute;
+    top: 1px;
+    right: 0;
+    width: 35px;
+}
+
+/* *********************** profile ******************************* */
+.profile{
+    width: 100%;
+}
+
+.profile .profile_box{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #128C7E;
+    color: var(--white);
+    padding: 5px 10px;
+}
+
+.profile_box .profile_name{
+    width: 100%;
+}
+
+.profile_name img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid rgb(18, 140, 126);
+    box-shadow: 5px 8px 8px -6px rgba(18,140,126,0);
+    object-fit: cover;
+}
+
+.profile_name h1{
+    width: 100%;
+    position: relative;
+    right: 50px;
+    margin-top: 24.50px;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.profile_name p{
+    position: relative;
+    top: -5px;
+    right: 50px;
+    font-size: 12px;
+}
+
+.profile_name i{
+    position: relative;
+    left: 60px;
+    font-size: 1rem;
+    margin: 0 10px;
+}
+
+/* ************************************* message *************************************** */
+/* overflow  */
+.overflow_scroll{
+    width: 100%;
+    /* height: 81%; */
+    height: 74%;
+    bottom: 50px;
+    overflow-y: scroll;
+}
+
+.overflow_scroll::-webkit-scrollbar{
+    display: none;
+}
+
+
+.message{
+    width: 100%;
+}
+
+.message .message_container{
+    margin: 15px 0 0 20px;
+    width: 250px;
+    height: 50px;
+    background-color: var(--white);
+    padding: 10px;
+    position: relative;
+    z-index: 1;
+    box-shadow: var(--boxShadow);
+}
+
+.message_container::before{
+    position: absolute;
+    top: 5px;
+    left: -5px;
+    content: "";
+    width: 50px;
+    height: 15px;
+    border-bottom-left-radius: 50px;
+    transform: rotate(30deg);
+    background-color: var(--white);
+    z-index: -1;
+}
+
+.message_container p{
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.message_container span{
+    font-size: 10px;
+    position: relative;
+    top: -20px;
+}
+
+/* *************************** replay ********************************** */
+.replay{
+    width: 100%;
+    position: relative;
+}
+
+.replay .replay_container{
+    margin: 15px 0 0 20px;
+    width: 250px;
+    height: 100%;
+    background-color: #25D366;
+    color: var(--black);
+    padding: 5px 10px;
+    position: relative;
+    left: 80px;
+    z-index: 1;
+    box-shadow: var(--boxShadow);
+}
+
+.replay_container::before{
+    position: absolute;
+    top: -1px;
+    right: -3px;
+    content: "";
+    width: 23px;
+    height: 18px;
+    border-top-left-radius: 50px;
+    transform: rotate(166deg);
+    background-color: #25D366;
+    z-index: -1;
+
+}
+
+.replay_container p{
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.replay_container span{
+    font-size: 10px;
+    position: relative;
+    top: -20px;
+}
+
+/* *************************** message_send *************************************** */
+.message_send{
+    width: 100%;
+}
+
+.message_send .message_send_container{
+    margin-top: -11.50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 55;
+}
+
+.message_send_container span i{
+    position: absolute;
+    top: 15px;
+    left: 12.50px;
+    font-size: 1.50rem;
+    color: rgba(58, 56, 56, 0.514);
+}
+
+.message_send_container form{
+    width: 100%;
+}
+
+form input{
+    width: 85%;
+    margin: 5px auto 0 5px;
+    padding: 8px 20px 8px 32.50px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    border: 1px solid rgba(51, 50, 50, 0.281);
+}
+
+/* form i{
+    z-index: 2;
+    cursor: pointer;
+}
+
+form i::before{
+    position: absolute;
+    top: 3px;
+    margin-left: -1px;
+    width: 45px;
+    height: 45px;
+    background-color: #075E54;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 45px;
+    font-size: 1rem;
+    color: var(--white);
+    z-index: -1;
+} */
+
+form button{
+    width: 45px;
+    height: 45px;
+    background-color: #075E54;
+    color: white;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+}
+
+.send_icon{
+    position: absolute;
+    top: 15px;
+    right: 65px;
+    z-index: 55;
+}
+
+.send_icon i{
+    margin: 0 5px;
+    font-size: 1.10rem;
+}
+
+/* ***************************** container_emoji ***************************************** */
+.container_emoji{
+    width: 100%;
+}
+
+.container_emoji .container_emoji_box{
+    position: absolute;
+    top: 325px;
+    width: 90%;
+    background-color: #128C7E;
+    padding: 10px 0;
+    z-index: 555;
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(0);
+    transition: 0.5s ease-in-out;
+}
+
+.container_emoji_box.emojiActive{
+    overflow: visible;
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
+    transition: 0.5s ease-in-out;
+}
+
+.container_emoji_box ul{
+    position: relative;
+    right: 25px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.container_emoji_box ul li{
+    list-style: none;
+    margin: 0 3px;
+    font-size: 1.50rem;
+    cursor: pointer;
+}
+
+#close{
+    position: absolute;
+    top: -15px;
+    right: -25px;
+    margin: 10px;
+    font-size: 1.50rem;
+    font-weight: bold;
+    color: vaR(--black);
+}
+
+/* ******************************* setting Container ***************************** */
+.ellipsis_container{
+    width: 100%;
+    position: relative;
+}
+
+.ellipsis_container .ellipsis_box{
+    position: absolute;
+    top: -428px;
+    right: 3px;
+    width: 120px;
+    height: auto;
+    background-color: var(--white);
+    box-shadow: var(--boxShadow);
+    z-index: 1;
+    display: none;
+}
+
+.ellipsis_box.ellipsis_pop{
+    display: block;
+}
+
+.ellipsis_box::before{
+    position: absolute;
+    top: -9px;
+    right: 10px;
+    content: "";
+    width: 15px;
+    height: 20px;
+    background-color: var(--white);
+    transform: rotate(48deg);
+    z-index: -1;
+
+}
+
+.ellipsis_box ul li{
+    list-style: none;
+    cursor: pointer;
+}
+
+
+.ellipsis_box ul li a{
+    position: relative;
+    top: 6px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--black);
+}
+
+.ellipsis_box ul li a:hover{
+    color: rgba(112, 112, 112, 0.719);
+}
+
+/* *************************** container_name *********************************************** */
+.container_name{
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 90px;
+    z-index: 9999;
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.container_name.container_pop_Name{
+    width: 90%;
+    overflow: visible;
+    visibility: visible;
+    opacity: 1;
+}
+
+.container_name .name_box{
+    background-color: #dddddd;
+}
+
+.name_box .backup{
+    height: 10px;
+    background-color: #128C7E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.backup span i{
+    font-size: 2rem;
+    color: var(--white);
+}
+
+.backup span p{
+    margin-top: 8px;
+    font-size: 1.20rem;
+    font-weight: bold;
+    color: var(--white);
+}
+
+.name_show{
+    width: 100%;
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 20px 10px 20px;
+}
+
+.name_show img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.name_show span h1{
+    font-size: 1.15rem;
+    font-weight: bold;
+    position: relative;
+    top: 10px;
+    right: 65px;
+}
+
+.name_show span p{
+    position: relative;
+    top: 10px;
+    right: 65px;
+}
+
+.name_show span i{
+    color: #25D366;
+    font-size: 1.50rem;
+}
+
+.name_box ul li{
+    list-style: none;
+    line-height: 25px;
+    cursor: pointer;
+}
+
+.name_box ul li:hover{
+    color: rgba(61, 60, 60, 0.692);
+}
+
+.name_box ul li i{
+    position: relative;
+    right: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #919191;
+    margin: 0 5px;
+}
+
+.name_box ul li p{
+    font-size: 14px;
+    position: relative;
+    left: 22px;
+}
+
+.name_box .bottomText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5px;
+}
+
+/* ***************************** container_wallpapers ************************************* */
+.container_wallpapers{
+    width: 0;
+    /* height: 100%; */
+    position: absolute;
+    top: 85px;
+    z-index: 99999;
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.container_wallpapers.wallpaper_show_pop{
+    width: 90%;
+    overflow: visible;
+    visibility: visible;
+    opacity: 1;
+}
+
+.container_wallpapers .wallpapers_box{
+    background-color: #128C7E;
+}
+
+.wallpapers_box .wallpapers_icon{
+    background-color: #128C7E;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+}
+
+.wallpapers_icon span i{
+    font-size: 2rem;
+    color: var(--white);
+    margin: 10px 0 0 0;
+}
+
+.wallpapers_icon span p{
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin: 1px 0 0 0;
+    color: var(--white);
+}
+
+.wallpapers_box ul{
+    /* margin-top: 65px; */
+    padding-left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.wallpapers_box ul li{
+    list-style: none;
+    padding: 0;;
+}
+
+.wallpapers_box ul li a img{
+    padding: 0;
+    width: 125px;
+    height: 115px;
+    border: 1px solid #128C7E;
+}
+
+/* ****************************** virification_container ************************** */
+
+.virification_container{
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    z-index: 99999;
+    /* display: none; */
+}
+
+.virification_container .virification_box{
+    width: 90%;
+    height: 530px;
+    background-color: #075E54;
+}
+
+.virification_box img{
+    width: 100px;
+    position: absolute;
+    top: 25%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+}
+
+.virification_box form input{
+    width: 80%;
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    border: none;
+    outline: none;
+    padding: 12px 10px;
+    border-radius: 0;
+}
+
+.virification_box form small{
+    width: 80%;
+    position: absolute;
+    top: 55%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    border: none;
+    outline: none;
+    color: var(--white);
+    text-align: center;
+    padding: 10px 0;
+}
+
+.virification_box form button{
+    width: 50%;
+    position: absolute;
+    top: 65%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    border: none;
+    outline: none;
+    padding: 10px;
+    background-color: #25D366;
+    color: var(--white);
+    font-weight: bold;
+    letter-spacing: 5px;
+    border-radius: 0;
+}
+
+
+/* **************************** .displayOne ************************************  */
+.displayOne{
+    display: none;
+}
+
+/* ****************************** media query **************************************** */
+@media screen and (max-width: 500px){
+    .whatsapp .whatsapp_background{
+        width: 100%;
+        padding: 0 10px;
+    }
+}
+
+@media screen and (max-width: 425px){
+    .whatsapp .whatsapp_background{
+        width: 90%;
+        margin: 0 auto;
+        padding: 0 5px;
+    }
+
+    .profile_name h1{
+        right: 35px;
+    }
+    
+    .profile_name p{
+        right: 35px;
+        font-size: 10px;
+    }
+    
+    .profile_name i{
+        left: 30px;
+    }
+
+    /* input bottom  */
+    
+    form input{
+        width: 80%;
+        margin: 5px auto 0 5px;
+    }
+    
+    .send_icon{
+        right: 80px;
+    }
+
+    /* emoji  */
+    .container_emoji .container_emoji_box{
+        top: 322px;
+        width: 85%;
+    }
+
+    /* message container  */
+    .replay .replay_container{
+        width: 200px;
+        left: 40px;
+    }
+
+    /* setting option  */
+    .container_name.container_pop_Name{
+        width: 87.20%;
+        margin: 0 auto;
+    }
+
+    .name_show{
+        padding: 25px 10px 10px 5px;
+    }
+    
+    .name_show span h1{
+        right: 50px;
+    }
+    
+    .name_show span p{
+        right: 50px;
+    }
+
+    .name_box ul li{
+        line-height: 24px;
+    }
+    
+    .name_box ul li i{
+        right: 5px;
+        font-size: 1rem;
+    }
+    
+    .name_box ul li p{
+        font-size: 12px;
+        left: 15px;
+    }
+
+    /* wallpaper  */
+    .container_wallpapers.wallpaper_show_pop{
+        width: 87%;
+    }
+
+    .wallpapers_box ul li a img{
+        padding: 0;
+        width: 90px;
+        height: 112px;
+        border: 1px solid #128C7E;
+    }
+
+    /* virification box  */
+    
+    .virification_container .virification_box{
+        width: 87%;
+        height: 520px;
+    }
+
+    .virification_box form input{
+        width: 70%;
+        left: 43%;
+    }
+}
+
+@media screen and (max-width: 400px){
+    /* emoji  */
+    .container_emoji .container_emoji_box{
+        top: 245px;
+        width: 87%;
+    }
+}

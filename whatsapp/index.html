@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favbicon  -->
+    <link rel="icon" href="whatsapp-image/favbicon.png" type="icon/image">
+    <!-- icon  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- bootstrap  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- css  -->
+    <link rel="stylesheet" href="whatsapp-style/whatsapp.css">
+    <title>Whatsapp</title>
+</head>
+<body>
+
+    <main>
+        <section>
+            <div class="whatsapp">
+                <div class="whatsapp_background">
+                    <!-- curicle top  -->
+                    <div class="whatsapp_curicle">
+                        <span class="curicle_one"></span>
+                        <span class="curicle_large"></span>
+                    </div>
+                    <!-- watch time with network and buttery with signle -->
+                    <div class="background_screen" id="background_wallpaer_set">
+                        <div class="watch_dsiplay">
+                            <div class="watch_container">
+                                <span id="hours"></span>
+                                <span id="min"></span>
+                                <span id="secound"></span>
+                            </div>
+                            <div class="watch_container">
+                                <div class="network">
+                                    <div class="network_one"></div>
+                                    <div class="network_two"></div>
+                                    <div class="network_three"></div>
+                                </div>
+                                <div class="buttery">
+                                    <img src="whatsapp-image/battery.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- profile name show  -->
+                        <div class="profile displayOne">
+                            <div class="profile_box">
+                                <div class="profile_name">
+                                    <img src="whatsapp-image/ajmal.jpg" id="img" alt="your image">
+                                </div>
+                                <div class="profile_name">
+                                    <h1 id="name">MOHMMAD AZMAL ALI</h1>
+                                    <p id="lastSeen">last seen 10:50</p>
+                                </div>
+                                <div class="profile_name">
+                                    <span><i class="fas fa-phone-alt"></i></span>
+                                    <span><i class="fas fa-ellipsis-v" id="ellipsis"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- overflow flow  -->
+                        <div class="overflow_scroll displayOne">
+                        <!-- replay  -->
+                        <div class="replay" id="messgaeReply">
+                            <!-- <div class="replay_container" id="replay_Container_elemenent">
+                                <p id="message_replay">MOHHMAD AZMAL ALI</p>
+                                <span id="text_replay">Lorem ipsum dolor sit amet consectetur adipisicing</span>
+                            </div> -->
+                        </div>
+                         <!-- message  -->
+                         <!-- <div class="message" id="sendMessage"> -->
+                            <!-- <div class="message_container">
+                                <p id="message_Name">MOHHMAD AZMAL ALI</p>
+                                <span id="text_message">Lorem ipsum dolor sit amet consectetur adipisicing</span>
+                            </div> -->
+                        <!-- </div> -->
+                        </div>
+                        <!-- message send with button  -->
+                        <div class="message_send displayOne">
+                            <div class="message_send_container">
+                                <span id="emaoji"><i class="far fa-laugh"></i></span>
+                                <form id="form">
+                                    <input type="text" name="" id="inputText" placeholder="Type a message">
+                                    <button><i class="fas fa-microphone" id="submit"></i></button>
+                                </form>
+                                <div class="send_icon">
+                                    <i class="fas fa-paperclip"></i>
+                                <i class="fas fa-camera"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- emoji  -->
+                        <div class="container_emoji displayOne">
+                            <div class="container_emoji_box" id="emojiContaoner">
+                                    <ul>
+                                        <li>🥳</li>
+                                        <li>😀</li>
+                                        <li>😄</li>
+                                        <li>😁</li>
+                                        <li>😅</li>
+                                        <li>😂</li>
+                                        <li>🤣</li>
+                                        <li>😊</li>
+                                        <li>😇</li>
+                                        <li>🙂</li>
+                                        <li>😍</li>
+                                        <li>🥰</li>
+                                        <li>😘</li>
+                                        <li>😜</li>
+                                        <li>🤓</li>
+                                        <li>😎</li>
+                                        <li>🥳</li>
+                                        <li>😡</li>
+                                        <li>🥶</li>
+                                        <li>😱</li>
+                                        <li>😲</li>
+                                        <li>🤑</li>
+                                        <li>😧</li>
+                                        <li>😴</li>
+                                        <li>🥱</li>
+                                        <li>🤢</li>
+                                        <li>🤮</li>
+                                        <li>🤧</li>
+                                        <li>😷</li>
+                                        <li>🤒</li>
+                                        <li>🤕</li>
+                                        <li>🤗</li>
+                                        <li>🤫</li>
+                                        <li>🧐</li>
+                                        <li>😩</li>
+                                        <li>🙂</li>
+                                        <li>🥰</li>
+                                        <li>😘</li>
+                                        <li>😜</li>
+                                        <li>🤓</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- end  -->
+                            
+                            <div class="ellipsis_container displayOne">
+                                <div class="ellipsis_box" id="ellipsis_container">
+                                    <ul>
+                                        <li id="settingClick"><a href="#">Settings</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- setting end  -->
+
+                            <div class="container_name displayOne" id="container_name">
+                                <div class="name_box">
+                                    <div class="backup">
+                                        <span><i class="fas fa-angle-left" id="angle_left_close"></i></span>
+                                        <span><p>Settings</p></span>
+                                    </div>
+                                    <div class="name_show">
+                                        <span><img src="whatsapp-image/ten.jpg" id="profileImgChnage" alt=""></span>
+                                        <span><h1 id="onwerName">Name</h1> <p id="showStatus">Avilavlebe</p></span>
+                                        <span><i class="fas fa-qrcode"></i></span>
+                                    </div>
+                                    <hr>
+                                    <ul>
+                                        <li>
+                                            <i class="fas fa-key"></i>Account
+                                            <p>Privacy Security, change number</p>
+                                        </li>
+                                        <li id="show_wallpaper">
+                                            <i class="fas fa-comment-alt"></i>Chats
+                                            <p>Theme, wallpapers, chat history</p>
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-bell"></i>Notifications
+                                            <p>Messgae, group & call tones</p>
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-sync-alt"></i>Storage
+                                            <p>Network, usage, auto-donwload</p>
+                                        </li>
+                                        <li>
+                                            <i class="far fa-question-circle"></i>Help
+                                            <p>Help center, contact us, Privacy policy</p>
+                                        </li>
+                                    </ul>
+                                    <hr>
+                                    <span class="bottomText">Whatsapp</span>
+                                </div>
+                            </div>
+                            <!-- container name end  -->
+                            <div class="container_wallpapers displayOne" id="wallpaper_container">
+                                <div class="wallpapers_box">
+                                    <div class="wallpapers_icon">
+                                        <span><i class="fas fa-angle-left" id="wallpapers_icon_close"></i></span>
+                                        <span><p>Wallpapers</p></span>
+                                    </div>
+                                    <ul>
+                                        <li id="imgChange1"><a href="#"><img src="whatsapp-image/wahtsapp_wallpaper/one.png" alt=""></a></li>
+                                        <li id="imgChange2"><a href="#"><img src="whatsapp-image/wahtsapp_wallpaper/two.jpg" alt=""></a></li>
+                                        <li id="imgChange3"><a href="#"><img src="whatsapp-image/wahtsapp_wallpaper/three.jpg" alt=""></a></li>
+                                        <li id="imgChange4"><a href="#"><img src="whatsapp-image/wahtsapp_wallpaper/four.jpg" alt=""></a></li>
+                                        <li id="imgChange5"><a href="#"><img src="whatsapp-image/wahtsapp_wallpaper/five.jpg" alt=""></a></li>
+                                        <li id="imgChange6"><a href="#"><img src="whatsapp-image/wahtsapp_wallpaper/six.png" alt=""></a></li>
+                                        <li id="imgChange7"><a href="#"><img src="whatsapp-image/wahtsapp_wallpaper/seven.jpg" alt=""></a></li>
+                                        <li id="imgChange8"><a href="#"><img src="whatsapp-image/wahtsapp_wallpaper/eight.png" alt=""></a></li>
+                                        <li id="imgChange9"><a href="#"><img src="whatsapp-image/wahtsapp_wallpaper/nine.jpg" alt=""></a></li>
+                                        <li id="imgChange10"><a href="#"><img src="whatsapp-image/wahtsapp_wallpaper/ten.jpg" alt=""></a></li>
+                                        <li id="imgChange11"><a href="#"><img src="whatsapp-image/wahtsapp_wallpaper/eleven.jpg" alt=""></a></li>
+                                        <li id="imgChange12"><a href="#"><img src="whatsapp-image/wahtsapp_wallpaper/tewal.jpg" alt=""></a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- wallpapers  -->
+                            <div class="virification_container" id="virification_container">
+                                <div class="virification_box">
+                                    <img src="whatsapp-image/favbicon.png" alt="">
+                                    <form id="formLogin">
+                                        <input type="text" name="" id="enterYourName" placeholder="Enter Your Name" maxlength="15">
+                                    <small></small>
+                                    <button id="loginButton">LogIn</button>
+                                    </form>
+                                </div>
+                            </div>
+                            <!-- virication end  -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+<!-- jquery  -->
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<!-- javascript  -->
+<script src="whatsapp-style/wahtsapp.js"></script>
+</html>
